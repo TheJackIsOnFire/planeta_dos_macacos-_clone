@@ -1,0 +1,42 @@
+//Botões 
+@mixin button--text($fontSize: 15px, $lineHeight: 1.6px, $letterSpacing: 1.5px) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button {
+    @include button--text;
+    border: 1px solid transparent;
+    border-radius: .25em;
+    height: 40px;
+    width: auto;
+    padding: 0 16px;
+    text-align: center;
+    cursor: pointer;
+
+    &--1 {
+        color: #f9f9f9;
+        background: linear-gradient(82deg,#e1054a 19%,#ce4100);
+    }
+
+    &--2 {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #f9f9f9;
+        border-color: #f9f9f9;
+        margin-left: 16px;
+
+        &:hover{
+            background-color: #f9f9f9;
+            color: black;
+        }
+    }
+
+    &--3 {
+        color: #f9f9f9;
+        background: linear-gradient(82deg,#e1054a 19%,#ce4100);
+    }
+
+}

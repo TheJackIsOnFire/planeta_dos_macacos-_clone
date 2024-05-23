@@ -1,3 +1,6 @@
+@use "nav";
+@use "buttons";
+
 //fontes
 @font-face {
     font-family: Avenir;
@@ -12,17 +15,36 @@
 }
 
 //resert
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: Avenir, sans-serif;
+    text-decoration: none;
 }
 
+//Configuração da imagem de fundo
 body {
     background-image: url(../../src/images/back_ground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+//Formatação dos textos
+@mixin text($fontSize: 20px, $lineHeight: 1.4px, $letterSpacing: 0.11px) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    font-weight: bold;
+}
+
+.text {
+    @include text;
+    color: #f9f9f9;
+}
+
+.text--small {
+    @include text(12px, 1.5px, -0.1px);
+    color: #cacaca;
 }
