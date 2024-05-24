@@ -1,5 +1,6 @@
 @use "nav";
 @use "buttons";
+@use "hero";
 
 //fontes
 @font-face {
@@ -31,6 +32,11 @@ body {
     background-attachment: fixed;
 }
 
+//Oculta elementos(elementos ocultos: button--1 nav__logo__img)
+.element--hidden {
+    display: none;
+}
+
 //Formatação dos textos
 @mixin text($fontSize: 20px, $lineHeight: 1.4px, $letterSpacing: 0.11px) {
     font-size: $fontSize;
@@ -47,4 +53,11 @@ body {
 .text--small {
     @include text(12px, 1.5px, -0.1px);
     color: #cacaca;
+}
+
+.container__main {  
+    .main {
+        padding: 0 73.14px;
+        width: 100%;
+    }
 }
