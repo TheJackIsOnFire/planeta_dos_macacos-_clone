@@ -1,6 +1,7 @@
 @use "nav";
 @use "buttons";
 @use "hero";
+@use "highlighted";
 
 //fontes
 @font-face {
@@ -22,6 +23,7 @@
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
     text-decoration: none;
+    list-style: none;
 }
 
 //Configuração da imagem de fundo

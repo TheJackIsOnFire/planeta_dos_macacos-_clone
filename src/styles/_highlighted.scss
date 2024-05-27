@@ -1,0 +1,42 @@
+.highlighted {
+    display: block;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        height: 28px;
+        width: 100%;
+        padding-left: 6px;
+    }
+
+    &__films {
+        display: flex;
+        flex-flow: wrap;
+        margin: 0px 0px 0px -20px;   
+        padding-bottom: 52px;
+
+        &__item {
+            margin: 20px 0px 0px 20px;  
+            border: 3px solid transparent;
+            border-radius: 8px;
+
+            &:hover {
+                border: 3px solid #fff;
+                scale: 1.08;
+                transition: ease-in-out 300ms;
+            }
+
+            &__link {
+                display: flex;
+                width: auto;         
+    
+                &__img { 
+                    width: 327.03px;
+                    height: 183.95px;
+                    border-radius: 8px;  
+                    border: 3px solid rgba(255, 255, 255, 0);
+                }            
+            }
+        }
+    }
+}
