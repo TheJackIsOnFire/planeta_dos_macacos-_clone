@@ -6,7 +6,6 @@
         align-items: center;
         height: 28px;
         width: 100%;
-        padding-left: 6px;
     }
 
     &__films {
@@ -16,20 +15,20 @@
         padding-bottom: 52px;
 
         &__item {
-            margin: 20px 0px 0px 20px;  
-            border: 3px solid transparent;
+            margin: 14px 0px 0px 14px;  
             border-radius: 8px;
+            border: 3px solid rgba(255, 255, 255, 0);
+            transition: border 300ms ease-out 0s;
+            transition: scale 400ms ease-out 0s;
 
             &:hover {
-                border: 3px solid #fff;
+                border: 3px solid rgba(255, 255, 255, 1);
                 scale: 1.08;
-                transition: ease-in-out 300ms;
             }
 
             &__link {
                 display: flex;
-                width: auto;         
-    
+
                 &__img { 
                     width: 327.03px;
                     height: 183.95px;

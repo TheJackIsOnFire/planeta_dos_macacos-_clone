@@ -2,6 +2,7 @@
 @use "buttons";
 @use "hero";
 @use "highlighted";
+@use "footer";
 
 //fontes
 @font-face {
@@ -40,10 +41,8 @@ body {
 }
 
 //Formatação dos textos
-@mixin text($fontSize: 20px, $lineHeight: 1.4px, $letterSpacing: 0.11px) {
+@mixin text($fontSize: 20px) {
     font-size: $fontSize;
-    line-height: $lineHeight;
-    letter-spacing: $letterSpacing;
     font-weight: bold;
 }
 
@@ -53,7 +52,8 @@ body {
 }
 
 .text--small {
-    @include text(12px, 1.5px, -0.1px);
+    @include text(12px);
+    font-weight: normal;
     color: #cacaca;
 }
 
