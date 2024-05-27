@@ -1,17 +1,25 @@
 //Comportamento do nav
 
-/*const navbar = document.querySelector('.nav');
+const navbar = document.querySelector('.nav');
+const isHidden = document.querySelector('.element--hidden')
+const button1 = document.querySelector('.button--1')
 
 document.addEventListener("scroll", function() {
     const posicaoy = window.pageYOffset;
-    navbar.style.opacity = "0";
+
     if (posicaoy == 0) {
-        navbar.style.opacity = "0";
+        navbar.style.backgroundColor = "transparent";
+        isHidden.style.display = "none";
+        button1.style.display = "none";
+
     } else {
-        navbar.style.opacity = "1";
+        navbar.style.backgroundColor = "#0e0b14";
+        isHidden.style.display = "block";
+        button1.style.display = "block";
     }
 });
 
+/*
 window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY;
     var fundo = document.querySelector('.hero');
