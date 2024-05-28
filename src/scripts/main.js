@@ -33,3 +33,6 @@ window.addEventListener('scroll', function() {
       fundo.style.backgroundColor = corParametro; // Altera para a cor do parâmetro
     }
 });
+
+
+

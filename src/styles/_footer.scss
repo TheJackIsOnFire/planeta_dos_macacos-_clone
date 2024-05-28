@@ -9,6 +9,10 @@
         display: flex;
         flex-direction: column;
         background-color: #0e0b14;
+
+        @media (max-width: 768px) {
+            
+        }
     
         &__img {
             display: flex;
@@ -19,6 +23,11 @@
             &__logo {
                 width: 86px;
                 height: 48px;
+
+                @media (max-width: 768px) {
+                    width: 74px;
+                    height: 38px;
+                }
             }
         }
     
@@ -38,6 +47,10 @@
                     padding: 1px 6px;
                     border: none;
                     letter-spacing: -0.3px;
+
+                    @media (max-width: 768px) {
+                        letter-spacing: -0.64px;
+                    }
                 }
             }
         } 
@@ -45,9 +58,11 @@
         &__info {
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
             text-align: center;
             align-items: center;
+
 
             &__text {
                 display: flex;
@@ -60,12 +75,20 @@
                     height: 72px;
                     letter-spacing: -0.5px;
                     line-height: 19px;
+
+                    @media (max-width: 768px) {
+                        line-height: 16px;
+                    }
                     
                 }
 
                 &:last-child {
                     padding: 8px 0px 24px;
                     height: 50px;
+
+                    @media (max-width: 768px) {
+                        padding: 8px 0px 24px;
+                    }
                 }
             }
 

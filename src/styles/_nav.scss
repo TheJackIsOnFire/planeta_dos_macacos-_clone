@@ -11,6 +11,10 @@
     width: 100%;
     transition: all 0.2s ease-in-out 0s;
 
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+
     &__logo { 
         &__img {
             width: 86px;

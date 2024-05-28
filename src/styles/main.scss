@@ -30,13 +30,13 @@
 //Configuração da imagem de fundo
 body {
     background-color:#0e0b14;
+
     
     .background__container {
         background-color:#0e0b14;
         background-image: url(../../src/images/back_ground.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 100%;
         background-attachment: fixed;
     }
 }
@@ -65,7 +65,12 @@ body {
 
 .container__main {  
     .main {
-        padding: 0 73.14px;
+        //padding: 0 73.14px;
+        padding: 0 calc(3.5vw + 24px);
         width: 100%;
+
+        @media (max-width: 1280px) {
+            padding: 0 calc(3.5vw + 24px);
+        }
     }
 }
